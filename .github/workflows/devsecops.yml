@@ -40,7 +40,7 @@ jobs:
       - name: Aqua Security Trivy Scan
         uses: aquasecurity/trivy-action@v0.35.0
         with:
-          image-ref: "ousl-student-api:${{ github.sha }}"
+          image-ref: "ousl-student-api-lab3:${{ github.sha }}"
           format: "table"
           exit-code: "0"
           severity: "CRITICAL"
