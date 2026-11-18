@@ -34,7 +34,7 @@ jobs:
 
       # Step 4: Build Docker Container
       - name: Build Container
-        run: docker build -t ousl-student-api:${{ github.sha }} .
+        run: docker build -t ousl-student-api-lab3:${{ github.sha }} .
 
       # Step 5: Scan Docker Image using Aqua Security Trivy
       - name: Aqua Security Trivy Scan
